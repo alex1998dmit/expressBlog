@@ -1,6 +1,10 @@
-var express = require('express');
+let express = require('express');
+const morgan = require('morgan');
 
 const app = new express();
+const logger = morgan('combined');
+
+app.use(logger);
 
 app.get('/', (req, res) => {
     res.send('Hello World!');

@@ -1,3 +1,4 @@
+// For debug start, enter at terminal DEBUG=express:* node server.js
 let express = require('express');
 const morgan = require('morgan');
 
